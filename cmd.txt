@@ -1,0 +1,1 @@
+yarn start --private-key=0xe1c90b41551d5cfb131fe5218e35dda0745dba6e4e25567e0b5784a2e23be7fc --json-rpc=https://goerli.base.org --weth9-address=0x4200000000000000000000000000000000000006 --native-currency-label=ETH --owner-address=0x8104b928A9b772F284B328256Cf659017F4a3324

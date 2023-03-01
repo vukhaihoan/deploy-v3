@@ -1,0 +1,116 @@
+vukhaihoan@vukhaihoan-Alienware-m15-Ryzen-Ed-R5:~/code/startup/deploy-v3$ yarn start --private-key=0xe1c90b41551d5cfb131fe5218e35dda0745dba6e4e25567e0b5784a2e23be7fc --json-rpc=https://goerli.base.org --weth9-address=0x4200000000000000000000000000000000000006 --native-currency-label=ETH --owner-address=0x8104b928A9b772F284B328256Cf659017F4a3324
+yarn run v1.22.19
+$ yarn build
+$ ncc build index.ts -o dist -m
+ncc: Version 0.33.1
+ncc: Compiling file index.js into CJS
+ncc: Using typescript@4.2.3 (local user-provided)
+1400kB  dist/index.js
+1400kB  [6654ms] - ncc 0.33.1
+$ cat shebang.txt dist/index.js > dist/index.cmd.js && mv dist/index.cmd.js dist/index.js
+$ node dist/index.js --private-key=0xe1c90b41551d5cfb131fe5218e35dda0745dba6e4e25567e0b5784a2e23be7fc --json-rpc=https://goerli.base.org --weth9-address=0x4200000000000000000000000000000000000006 --native-currency-label=ETH --owner-address=0x8104b928A9b772F284B328256Cf659017F4a3324
+Step 1 complete [
+  {
+    message: 'Contract UniswapV3Factory deployed',
+    address: '0xBbBd280cABd6D5DeBE247DF076C1edeBFaA26254',
+    hash: '0xdc6c23207b6ee2a1a6c203d80175b68c141c71808cce7b2527a430e6442e767c'
+  }
+]
+Step 2 complete [
+  {
+    message: 'UniswapV3Factory added a new fee tier 1 bps with tick spacing 1',
+    hash: '0xab79d559965ade460e70798f74db188671de7a560e30e6e08a4bc0e46aaf521e'
+  }
+]
+Step 3 complete [
+  {
+    message: 'Contract UniswapInterfaceMulticall deployed',
+    address: '0x2204Ae70D8852E9B8122201719377c5e091633eA',
+    hash: '0x02cb34502c01a684f2605199645725179ef4759553e0a8b276432e4b07db645c'
+  }
+]
+Step 4 complete [
+  {
+    message: 'Contract ProxyAdmin deployed',
+    address: '0xCDfc034B769F80aF9749e7e0225b5C8f269E0845',
+    hash: '0xb20ea64ad96a23c2ed7d0b646c6112f8c92e751e136f9a422d5fc49fcc045f42'
+  }
+]
+Step 5 complete [
+  {
+    message: 'Contract TickLens deployed',
+    address: '0x50127cBB1fcC97DD528b566250e34155205050AE',
+    hash: '0x829c7e6e2aace5dac40aad5333f27db8f2342d4742e8a355ffdac733dd6901e0'
+  }
+]
+Step 6 complete [
+  {
+    message: 'Library NFTDescriptor deployed',
+    address: '0x015fF79f376afB4A4c3778F3b5773bcb8Fb239f2',
+    hash: '0x3686b74cae842bf65df5272cc06d6ebe4e735f4f20559abb5a28287bd461dfbf'
+  }
+]
+Step 7 complete [
+  {
+    message: 'Contract NonfungibleTokenPositionDescriptor deployed',
+    address: '0xb5e9E3d6946FE786A4Dd8F9838fB0a2584F21C97',
+    hash: '0xb1d923bb72ceb698a357e5737c610fc174fb45336a3f67dedf7c5af7daa746dc'
+  }
+]
+Step 8 complete [
+  {
+    message: 'Contract TransparentUpgradeableProxy deployed',
+    address: '0x1e97F1f7Ea1EdF9f8441965a970208D543Cdd455',
+    hash: '0x855386608b6d471c471db03a56be3195269d4568d95bb60d8e8d55a4b6747d3e'
+  }
+]
+Step 9 complete [
+  {
+    message: 'Contract NonfungiblePositionManager deployed',
+    address: '0xCa8D86F47A0867b2dAf74b21285C3794858310dF',
+    hash: '0x59d64698abdaafd2acefae194a9a946a19f4273464dec200144b8f3effa3741c'
+  }
+]
+Step 10 complete [
+  {
+    message: 'Contract V3Migrator deployed',
+    address: '0xA906A25194cD0Dea074dCA2F4073f0647a23dA34',
+    hash: '0x9b677ea3e765703de92787a90f7ade168c155e2733fe5eac12b47cd212036ecd'
+  }
+]
+Step 11 complete [
+  {
+    message: 'UniswapV3Factory owned by 0x8104b928A9b772F284B328256Cf659017F4a3324 already'
+  }
+]
+Step 12 complete [
+  {
+    message: 'Contract UniswapV3Staker deployed',
+    address: '0xFcf5E035212e740AA92016B9257e32Bfc5DBd636',
+    hash: '0xa4203903de73d76dc1c51ca925218fd1eab3e31fbbbb61262c75178d17f7865e'
+  }
+]
+Step 13 complete [
+  {
+    message: 'Contract QuoterV2 deployed',
+    address: '0x8253f01687B26BF4B09E3c87dAF7d3dD8A6e1a7C',
+    hash: '0xc57c9be881f82120925734468c7ba8014dc62b04be32fa94dfda0d1cb1ffedda'
+  }
+]
+Step 14 complete [
+  {
+    message: 'Contract SwapRouter02 deployed',
+    address: '0x90b35F617A31a4138F32Bf74c5C203E9593795Fb',
+    hash: '0xa3cbe37126c1440f293453bbdf1be703cae96ab8dbae78eeccbc2f7478c49a96'
+  }
+]
+Step 15 complete [
+  {
+    message: 'ProxyAdmin owned by 0x8104b928A9b772F284B328256Cf659017F4a3324 already'
+  }
+]
+Deployment succeeded
+[[{"message":"Contract UniswapV3Factory deployed","address":"0xBbBd280cABd6D5DeBE247DF076C1edeBFaA26254","hash":"0xdc6c23207b6ee2a1a6c203d80175b68c141c71808cce7b2527a430e6442e767c"}],[{"message":"UniswapV3Factory added a new fee tier 1 bps with tick spacing 1","hash":"0xab79d559965ade460e70798f74db188671de7a560e30e6e08a4bc0e46aaf521e"}],[{"message":"Contract UniswapInterfaceMulticall deployed","address":"0x2204Ae70D8852E9B8122201719377c5e091633eA","hash":"0x02cb34502c01a684f2605199645725179ef4759553e0a8b276432e4b07db645c"}],[{"message":"Contract ProxyAdmin deployed","address":"0xCDfc034B769F80aF9749e7e0225b5C8f269E0845","hash":"0xb20ea64ad96a23c2ed7d0b646c6112f8c92e751e136f9a422d5fc49fcc045f42"}],[{"message":"Contract TickLens deployed","address":"0x50127cBB1fcC97DD528b566250e34155205050AE","hash":"0x829c7e6e2aace5dac40aad5333f27db8f2342d4742e8a355ffdac733dd6901e0"}],[{"message":"Library NFTDescriptor deployed","address":"0x015fF79f376afB4A4c3778F3b5773bcb8Fb239f2","hash":"0x3686b74cae842bf65df5272cc06d6ebe4e735f4f20559abb5a28287bd461dfbf"}],[{"message":"Contract NonfungibleTokenPositionDescriptor deployed","address":"0xb5e9E3d6946FE786A4Dd8F9838fB0a2584F21C97","hash":"0xb1d923bb72ceb698a357e5737c610fc174fb45336a3f67dedf7c5af7daa746dc"}],[{"message":"Contract TransparentUpgradeableProxy deployed","address":"0x1e97F1f7Ea1EdF9f8441965a970208D543Cdd455","hash":"0x855386608b6d471c471db03a56be3195269d4568d95bb60d8e8d55a4b6747d3e"}],[{"message":"Contract NonfungiblePositionManager deployed","address":"0xCa8D86F47A0867b2dAf74b21285C3794858310dF","hash":"0x59d64698abdaafd2acefae194a9a946a19f4273464dec200144b8f3effa3741c"}],[{"message":"Contract V3Migrator deployed","address":"0xA906A25194cD0Dea074dCA2F4073f0647a23dA34","hash":"0x9b677ea3e765703de92787a90f7ade168c155e2733fe5eac12b47cd212036ecd"}],[{"message":"UniswapV3Factory owned by 0x8104b928A9b772F284B328256Cf659017F4a3324 already"}],[{"message":"Contract UniswapV3Staker deployed","address":"0xFcf5E035212e740AA92016B9257e32Bfc5DBd636","hash":"0xa4203903de73d76dc1c51ca925218fd1eab3e31fbbbb61262c75178d17f7865e"}],[{"message":"Contract QuoterV2 deployed","address":"0x8253f01687B26BF4B09E3c87dAF7d3dD8A6e1a7C","hash":"0xc57c9be881f82120925734468c7ba8014dc62b04be32fa94dfda0d1cb1ffedda"}],[{"message":"Contract SwapRouter02 deployed","address":"0x90b35F617A31a4138F32Bf74c5C203E9593795Fb","hash":"0xa3cbe37126c1440f293453bbdf1be703cae96ab8dbae78eeccbc2f7478c49a96"}],[{"message":"ProxyAdmin owned by 0x8104b928A9b772F284B328256Cf659017F4a3324 already"}]]
+Final state
+{"v3CoreFactoryAddress":"0xBbBd280cABd6D5DeBE247DF076C1edeBFaA26254","multicall2Address":"0x2204Ae70D8852E9B8122201719377c5e091633eA","proxyAdminAddress":"0xCDfc034B769F80aF9749e7e0225b5C8f269E0845","tickLensAddress":"0x50127cBB1fcC97DD528b566250e34155205050AE","nftDescriptorLibraryAddressV1_3_0":"0x015fF79f376afB4A4c3778F3b5773bcb8Fb239f2","nonfungibleTokenPositionDescriptorAddressV1_3_0":"0xb5e9E3d6946FE786A4Dd8F9838fB0a2584F21C97","descriptorProxyAddress":"0x1e97F1f7Ea1EdF9f8441965a970208D543Cdd455","nonfungibleTokenPositionManagerAddress":"0xCa8D86F47A0867b2dAf74b21285C3794858310dF","v3MigratorAddress":"0xA906A25194cD0Dea074dCA2F4073f0647a23dA34","v3StakerAddress":"0xFcf5E035212e740AA92016B9257e32Bfc5DBd636","quoterV2Address":"0x8253f01687B26BF4B09E3c87dAF7d3dD8A6e1a7C","swapRouter02":"0x90b35F617A31a4138F32Bf74c5C203E9593795Fb"}
+Done in 165.88s.
